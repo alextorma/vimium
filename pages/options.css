@@ -161,6 +161,10 @@ div#macos {
   display: none;
 }
 
+div#detectedKeypress {
+  margin-top: 1rem;
+}
+
 #linkHintCharactersContainer,
 #linkHintNumbersContainer,
 #waitForEnterForFilteredHintsContainer {

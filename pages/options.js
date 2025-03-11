@@ -63,6 +63,14 @@ const OptionsPage = {
       () => this.onUploadBackupClicked(),
     );
 
+    document.addEventListener(
+      'keydown',
+      (e) => {
+        const shortcutString = KeyboardUtils.getKeyCharString(e) ?? null;
+        document.getElementById("detectedKey").innerText == shortcutString
+      }
+    );
+
     for (const el of document.querySelectorAll(".reset-link a")) {
       el.addEventListener("click", (event) => {
         this.resetInputValue(event);
